@@ -1,16 +1,6 @@
 # LMOS
 
-LMOS is a Language Model Orchestration tool.
-
-It is designed as a scalable system to deploy large language models and other ML systems. Some core components include:
-
-## ALMoAPI
-
-ALMoAPI is a language model runtime forked from tabbyAPI, but with some extra enhancements to support mode advanced tool calling and to better integrate with the LMOS ecosystem. This is one of the few parts licensed under AGPL.
-
-## InferRoute
-
-InferRoute is a reverse proxy designed from the ground up with support for the LMOS system. The closest alternatives are liteLLM and routeLLM (which bundles liteLLM). This component ties the multiple backends together into one cohesive endpoint.
+LMOS is a Language Model Orchestration tool. It is designed as a scalable system to deploy large language models and other ML systems on both homelab and enterprise scales.
 
 ## Why LMOS
 
@@ -22,7 +12,7 @@ Unlike some other smaller scale projects, we support containerization as a first
 
 We strive to ensure all code is thoroughly tested, using both unit testing and static analysis tools like mypy, reducing the chance that bugs reach production at all. This expands to other systems, where we have submitted PRs into our dependencies to enable a deeper level of type checking.
 
-## LMOS Design Philosophy
+## Design Philosophy
 
 This document outlines the key design principles and philosophies that guide the development and operation of the LMOS (Language Model Orchestration System) project. These principles are fundamental to understanding how LMOS is structured and why certain decisions have been made.
 
@@ -38,6 +28,7 @@ One of the core tenets of LMOS is the concept of immutable configurations. This 
   3. This process continues until the entire system has refreshed to the new configuration.
 
 This approach offers several benefits:
+
 - Ensures system consistency and predictability
 - Simplifies debugging and troubleshooting
 - Supports easier rollbacks if issues are encountered
