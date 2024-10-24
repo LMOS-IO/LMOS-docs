@@ -33,3 +33,7 @@ This approach offers several benefits:
 - Simplifies debugging and troubleshooting
 - Supports easier rollbacks if issues are encountered
 - Aligns with immutable infrastructure practices
+
+### 2. Strong defaults
+
+All config values that can have a default should have a default, and that default should ideally be as general and non specific as possible. If you think that there is a better default for a specific value, please communicate that in a public setting, such as a github issue or discussion so that it can be debated.
